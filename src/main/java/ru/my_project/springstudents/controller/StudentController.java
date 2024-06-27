@@ -21,7 +21,7 @@ public class StudentController {
     @PostMapping("save_student")
     public String saveStudent(@RequestBody Student student) {
         service.saveStudent(student);
-        return "Student seccessfully saved";
+        return "Student successfully saved";
     }
 
     @GetMapping("/{email}")
