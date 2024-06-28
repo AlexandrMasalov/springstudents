@@ -15,9 +15,8 @@ public class InMemoryDAO {
         return STUDENTS;
     }
 
-    public Student saveStudent(Student student) {
+    public void saveStudent(Student student) {
         STUDENTS.add(student);
-        return student;
     }
 
     public Student findByEmail(String email) {

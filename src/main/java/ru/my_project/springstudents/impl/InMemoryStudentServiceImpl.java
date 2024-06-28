@@ -10,7 +10,7 @@ import java.util.List;
 
 @Service
 @AllArgsConstructor
-public class inMemoryStudentService implements StudentService {
+public class InMemoryStudentServiceImpl implements StudentService {
 
     private final InMemoryDAO repository;
 
@@ -20,8 +20,8 @@ public class inMemoryStudentService implements StudentService {
     }
 
     @Override
-    public Student saveStudent(Student student) {
-        return repository.saveStudent(student);
+    public void saveStudent(Student student) {
+        repository.saveStudent(student);
     }
 
     @Override
